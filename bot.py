@@ -31,6 +31,7 @@ def home():
 
 # Запуск бота в отдельном потоке
 def run_bot():
+  bot.remove_webhook()  
     bot.infinity_polling()
 
 if __name__ == "__main__":
